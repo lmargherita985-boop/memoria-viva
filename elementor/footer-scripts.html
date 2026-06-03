@@ -1,0 +1,23 @@
+<!--
+  Elementor Pro → Custom Code → Aggiungi nuovo
+
+  Impostazioni consigliate:
+  - Posizione: Footer
+  - Tipo di codice: HTML
+  - Visualizza: Solo su pagine selezionate → scegli la pagina con l'animazione
+
+  Sostituisci BASE_URL con la cartella dove carichi i file JS, es.:
+  https://tuosito.it/wp-content/uploads/memoria-viva
+
+  File da caricare in quella cartella (dalla root del repo):
+  - memoria-config.js
+  - memoria-physics.js
+
+  Matter.js resta sul CDN (non serve caricarlo sul server).
+-->
+<script
+  src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"
+  defer
+></script>
+<script src="BASE_URL/memoria-config.js" defer></script>
+<script src="BASE_URL/memoria-physics.js" defer></script>
